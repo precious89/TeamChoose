@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            width: 100%;
+            font-family: 'Dosis', sans-serif;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc__7lrJPJadRJ6r-RWiPGD4m9pp-zlWh39w&usqp=CAU");
+            background-size: 100%;
+            text-align: center;
+        }
+
+        .personal {
+            background-color: #e5e3e6a1;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>The sort team</h1>
+    <div class="personal">
+    <h1><u>Online meeting the team</u></h1>
+
+    <input type="text" id="name" placeholder="Please enter you name"><br><br>
+
+    Gender:
+    <select name="text" id="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select><br><br>
+
+
+    <input type="number" id="age" placeholder="Please enter you age"><br><br>
+
+    <button onclick="firstNameA()">Team A</button>
+    <button onclick="firstNameB()">Team B</button>
 
     <hr>
-    <div class="form">
-     <input type="text" id="name" placeholder="Name">
-     
+    <h3>Team A</h3>
+
+    <div id="autoTeamA"></div>
+
+    <h3>Team B</h3>
+
+    <div id="autoTeamB"></div>
     </div>
-         
+
+    <script src="./script.js"></script>
+
+
 </body>
+
 </html>
